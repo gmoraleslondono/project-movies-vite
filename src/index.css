@@ -15,15 +15,27 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Set core body defaults */
@@ -33,14 +45,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -58,8 +77,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -89,59 +110,6 @@ code {
     monospace;
 }
 
-.main-wraper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+body {
+  margin: 0;
 }
-
-.movie-card {
-  position: relative;
-}
-
-.movie-preview-info {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  visibility: hidden;
-  background: rgba(0,0,0,.75);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.movie-card:hover .movie-preview-info{
-  visibility: visible;
-}
-
-.movie-preview-info h2 {
-  margin-top: auto;
-  margin-bottom: 0;
-}
-
-/* Small devices such as large phones (640px and up)
- @media only screen and (min-width: 640px) {...}
-
- Medium devices such as tablets (768px and up)
- @media only screen and (min-width: 768px) {...}
-
- Large devices such as laptops (1024px and up)
- @media only screen and (min-width: 1024px) {...}
-
- Largest devices such as desktops (1280px and up)
- @media only screen and (min-width: 1280px) {...} */
-
- @media only screen and (min-width: 768px) {
-  .main-wraper {
-    grid-template-columns: repeat(3, 1fr);
-  }
- }
-
- @media only screen and (min-width: 1024px) {
-  .main-wraper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
- }

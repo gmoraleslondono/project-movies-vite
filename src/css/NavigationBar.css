@@ -1,0 +1,11 @@
+.navigation-bar a {
+/* 1 pixel black shadow to left, top, right and bottom */
+text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+color: black;
+text-decoration: none;
+font-size: 1rem;
+}
+
+.navigation-bar:hover a {
+    font-size: 1.2rem;
+}

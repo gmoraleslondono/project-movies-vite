@@ -1,0 +1,55 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.movie-card {
+  position: relative;
+}
+
+.movie-preview-info {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover .movie-preview-info {
+  visibility: visible;
+}
+
+.movie-preview-info h2 {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* Small devices such as large phones (640px and up)
+   @media only screen and (min-width: 640px) {...}
+  
+   Medium devices such as tablets (768px and up)
+   @media only screen and (min-width: 768px) {...}
+  
+   Large devices such as laptops (1024px and up)
+   @media only screen and (min-width: 1024px) {...}
+  
+   Largest devices such as desktops (1280px and up)
+   @media only screen and (min-width: 1280px) {...} */
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

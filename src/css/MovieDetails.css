@@ -1,0 +1,58 @@
+.movie-details {
+  max-height: 100vh;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bar-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info img {
+  max-width: 100%;
+}
+
+.info aside, .info img {
+  padding: 10%;
+}
+
+aside {
+  color: white;
+  font-size: 20px;
+}
+
+aside .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-shadow: 1px 1px black;
+}
+
+aside p {
+  text-align: justify;
+  line-height: 1;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    padding: 0 50px;
+  }
+
+  .info img {
+    max-height: 80%;
+  }
+}

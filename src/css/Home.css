@@ -1,6 +1,6 @@
 .main-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .movie-card {
@@ -41,6 +41,12 @@
   
    Largest devices such as desktops (1280px and up)
    @media only screen and (min-width: 1280px) {...} */
+
+@media only screen and (min-width: 370px) {
+  .main-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .main-wrapper {

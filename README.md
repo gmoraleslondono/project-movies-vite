@@ -46,4 +46,4 @@ To use the TMDB API, you need to obtain an API key. Follow these steps to get yo
 
 ### View it live
 
-Soon...
+Visit the live page here: https://gmoraleslondono.github.io/project-movies-vite/
